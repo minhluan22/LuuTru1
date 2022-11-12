@@ -10,6 +10,8 @@ int xoakt(char s[50]);
 int demtu(char s[50]);
 int demkt(char s[50]);
 void ghep(char s[50], char s2[50]);
+int ktdx(int a[],char s[30]);
+
 
 
 int main()
@@ -41,7 +43,6 @@ int main()
 	case 2:
 	fflush(stdin);
 	demtu(s);
-	demkt(s);
 	//goi ham thuc de hien cong viec tuong ung
 	printf("\nBam phim bat ky de tiep tuc!");
 	getch();
@@ -57,10 +58,13 @@ int main()
 	break;
 	
 	case 4:
+	fflush(stdin);
 	printf("\nBam phim bat ky de tiep tuc!");
 	//goi ham thuc de hien cong viec tuong ung
 	break;
 	case 5:
+		fflush(stdin);
+		demkt(s);
 	printf("\nBam phim bat ky de tiep tuc!");
 	//goi ham thuc de hien cong viec tuong ung
 	getch();
@@ -157,5 +161,7 @@ void ghep(char s[50], char s2[50])
 			printf("\n Ket qua sau khi noi chuoi la :");
 			printf("%s",s);
 	}
+
+
 
 
